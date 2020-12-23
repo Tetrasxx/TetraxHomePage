@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  color: white;
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+body {
+  background-color: #303038;
+  max-width: 750px;
+  margin: auto;
+}
+
+.container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+header .navbar {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+header .navbar a:link {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+header .profile {
+  margin: 5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .profile .nameAndDescription {
+  margin: auto 0;
+}
+
+header .profile .nameAndDescription p {
+  margin: 0.5rem 0;
+}
+
+header .profile .profileImage {
+  height: 100%;
+  border-radius: 50%;
+  border: 0.5rem solid black;
+  margin-left: 2rem;
+}
+
+@media (max-widht: 420px) {
+  .profile {
+    margin: 1rem 1rem;
+  }
+  .profile .nameAndDescription {
+    margin: auto 0;
+  }
+  .profile .nameAndDescription p {
+    margin: 0.5rem 0;
+  }
+  .profile .profileImage {
+    position: relative;
+    height: 100%;
+    border-radius: 0;
+    border: 0rem solid black;
+    margin-left: 2rem;
+  }
+}
+
+main {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  bottom: 0px;
+}
+/*# sourceMappingURL=styles.css.map */

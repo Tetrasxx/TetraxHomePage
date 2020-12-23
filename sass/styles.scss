@@ -1,0 +1,90 @@
+$background-color: #303038;
+$fonts: 'Inter', Helvetica, sans-serif;
+
+*{
+    margin: 0;
+    color: white;
+    font-family: $fonts ;
+}
+
+body{
+    background-color: $background-color;
+    max-width: 750px;
+    margin: auto;
+}
+.container{
+    align-self: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow: auto;
+}
+
+header{
+    .navbar{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        
+        a:link{
+            padding: 0 1rem;
+            text-decoration: none;
+        }
+
+    }
+    .profile{
+        margin: 5rem 1rem;
+        display: flex;
+        justify-content: space-around;
+
+        .nameAndDescription {
+            margin: auto 0;
+
+            p{
+                margin: 0.5rem 0;
+            }
+        }
+        .profileImage{
+            height: 100%;
+            border-radius: 50%;
+            border: 0.5rem solid black;
+            margin-left: 2rem;
+        }
+    }
+}
+//Esto no esta funcionando
+@media (max-widht: 420px) {
+    .profile{
+        margin: 1rem 1rem;
+        
+        
+
+        .nameAndDescription {
+            margin: auto 0;
+
+            p{
+                margin: 0.5rem 0;
+            }
+        }
+        .profileImage{
+            position: relative;
+            height: 100%;
+            border-radius: 0;
+            border: 0rem solid black;
+            margin-left: 2rem;
+        }
+    }
+}
+//upss......
+
+
+main{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    bottom: 0px;
+    
+}
