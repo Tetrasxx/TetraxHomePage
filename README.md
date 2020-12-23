@@ -1,4 +1,1 @@
 # TetraxHomePage
-
-Mi página web!
-
